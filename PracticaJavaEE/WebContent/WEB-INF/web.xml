@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>PracticaJavaEE</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>autorizar.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>
@@ -12,20 +12,22 @@
   
   <servlet>
 		<servlet-name>InicioAplicacion</servlet-name>
-		<servlet-class>Inicio</servlet-class>			
-		<init-param>
-			<param-name>usuario</param-name>
-			<param-value>darya</param-value>
-		</init-param>		
-		<init-param>
-			<param-name>password</param-name>
-			<param-value>darya</param-value>
-		</init-param>		
+		<servlet-class>Inicio</servlet-class>	
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>InicioAplicacion</servlet-name>
 		<url-pattern>/app</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>usuario</param-name>
+		<param-value>darya</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>darya</param-value>
+	</context-param>
   
 </web-app>
